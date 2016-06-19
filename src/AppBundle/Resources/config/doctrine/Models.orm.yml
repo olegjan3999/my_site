@@ -1,0 +1,30 @@
+AppBundle\Entity\Models:
+    type: entity
+    table: Models
+    indexes:
+        fk_brand_id:
+            columns:
+                - brand_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        model:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+        brandId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: brand_id
+    lifecycleCallbacks: {  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        <script src="/bundles/framework/js/libs/jquery.js"></script>
+        <script src="/bundles/framework/js/libs/http.js"></script>
+        <script src="/bundles/framework/js/services/httpService.js"></script>
+        <script src="/bundles/framework/js/index.js"></script>
+
+        <link href="/bundles/framework/css/common/bootstrap.css" rel="stylesheet">
+        <link href="/bundles/framework/css/common/slider.css" rel="stylesheet">
+
+        <link href="/bundles/framework/css/css.css" rel="stylesheet">
+        <link href="/bundles/framework/css/form-css.css" rel="stylesheet">
+        <link href="/bundles/framework/css/header.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+    <header>
+        <div class="container-fluid">
+
+
+            <div class="row">
+
+                <div class="logo">
+                    <a href="/" rel="home"><img src="/bundles/framework/images/Logo.png" alt="Colorion"/></a>
+                </div>
+
+                <ul class="nav nav-tabs menu-navigation">
+                    <li role="presentation" class="active"><a href="/">Главная</a></li>
+                    <li role="presentation"><a href="#">Контакты</a></li>
+                    <li role="presentation"><a href="/bundles/framework/index.html">Кузовы</a></li>
+                </ul>
+
+                <div class="feedback">
+                    <p>Контакты</p>
+
+                    <div class="num">(066) 507-48-25</div>
+                    <br/>
+
+                    <div class="num">(095) 817-13-86</div>
+                    <br/>
+
+                    <div class="num">(095) 817-13-86</div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </header>
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

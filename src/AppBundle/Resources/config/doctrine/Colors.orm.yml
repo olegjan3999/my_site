@@ -1,0 +1,50 @@
+AppBundle\Entity\Colors:
+    type: entity
+    table: Colors
+    indexes:
+        fk_year_id:
+            columns:
+                - year_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        yearId:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: year_id
+        img:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        colorGroup:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+            column: color_group
+        title:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+        colorCode:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+            column: color_code
+    lifecycleCallbacks: {  }
