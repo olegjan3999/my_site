@@ -13,6 +13,4 @@ Running
 
 3) php bin/console doctrine:schema:update --force 
 
-(generate tables in database)
-
 4) php bin/console server:run
