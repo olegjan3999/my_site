@@ -1,0 +1,118 @@
+.wrapper{
+	height: 100%;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.pm-info{
+	position: relative;
+}
+.preview{
+	width: 100%;
+	height: 240px;
+	background-image: url("../images/form-bg.jpg");
+}
+.model-info{
+	height: 170px;
+	width: 300px;
+	top: 134px;
+	margin-left: 60px;
+	position: absolute;
+	padding: 0 0 0 0;
+	background-color: white;
+	border-radius: 40px;
+	border: 1px solid black;
+}
+.model-info h1{
+	text-align: center;
+    font-size: 30px;
+    color: steelblue;
+}
+.brend, .model, .year{
+	padding: 0 0 0 40px;
+	font-weight: bold;
+}
+.brend span:first-child, .model span:first-child, .year span:first-child{
+	color: #8a9299;
+}
+ .model-info span {
+ 	display: inline-block;
+	padding: 0 10px;
+}
+
+
+.total {
+	height: 50px;
+	width: 100%;
+	background-color: #ddf4fb;
+	border: 2px solid #c6edf9;
+	border-radius: 5px;
+	color: #8a9299;
+	text-align: right;
+	padding: 13px 20px 0 0;
+}
+
+.form{
+	margin-top: 75px;
+}
+.total span, strong {
+	display: inline-block;
+	padding: 0 5px;
+}
+.form-reg{
+    float: left;
+}
+
+.not-found{
+	background: steelblue;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 30px;
+    padding: 2px 22px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.submit{
+	background: #ffa02f;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 30px;
+    padding: 2px 22px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.not-found:hover, .submit:hover{
+	background:#8a9299;
+	color: black;
+}
+.form {
+	margin-top: 100px;
+}
+.form  span.help{
+	display: inline-block;
+}
+label{
+	padding-top: 6px;
+    font-size: 15px;
+    line-height: 19px;
+    width: 130px;
+    text-align: right;
+    color: #3d4247;
+}
+.field {
+	margin: 4px 4px 4px 20px;
+	width: 250px;
+}
+.info-more{
+	float: right;
+	width: 30%;
+}
+
+.form-right {
+	float: left;
+}
+.total{
+	clear: both;
+}

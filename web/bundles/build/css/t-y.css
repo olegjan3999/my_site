@@ -1,0 +1,25 @@
+.wrapper{
+	height: 100%;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.pm-info{
+	width: 400px;
+	height: 100%;
+	margin: auto;
+	margin-top: 75px;
+}
+h1{
+    font-size: 25px;
+    color: steelblue;
+    color: rgb(138, 146, 153);
+    text-align: center;
+}
+p {
+	font-size: 17px;
+    color: steelblue;
+    color: rgb(138, 146, 153);
+    font-weight: bold;
+    text-align: center;
+}
