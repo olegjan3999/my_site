@@ -26,7 +26,7 @@
                     <td>Цветовой код</td>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="color-fields">
 
                 {% for color in colors %}
                     <tr>
@@ -41,6 +41,29 @@
                 </tbody>
 
             </table>
+
+            <p id="color-error">* Please, choose your color</p>
+
+            <script type="text/javascript">
+                var handler = function ( event ){
+                    event = event || window.event;
+                    var target = event.target || event.srcElement;
+                    if ( target.nodeType == 1 && target.nodeName.toLowerCase() == "input" && target.type == "checkbox" && target.checked ) {
+                        var inputs = document.getElementsByTagName("input");
+                        for ( var i = 0; inputs[i]; i++ ) {
+                            if ( inputs[i].type == "checkbox" && inputs[i] != target ) {
+                                inputs[i].checked = false;
+                            }
+                        }
+                    }
+                }
+                if (document.addEventListener){
+                    document.addEventListener('click', handler, false);
+                } else if (document.attachEvent){
+                    document.attachEvent('onclick', handler);
+                }
+            </script>
+
 
 
             <div class="total">

@@ -7,9 +7,22 @@
 
     <div class="wrapper">
         <div class="pm-info">
-            <h1>Спасибо за Ваш заказ!</h1>
-            <p class="fig"><img src="/bundles/framework/images/t-y_bg.jpg" alt="Фотография"></p>
+            <h2>Спасибо за Ваш заказ!</h2>
+            <div class="order-info">
+                <ul>
+                    <li>Model: {{ order.auto.brand }} </li>
+                    <li>Model: {{ order.auto.model }} {{ order.auto.year }} </li>
+                    <li>Color : {{ order.color.color }}</span></li>
+                </ul>
+            </div>
             <p>В ближайшее время с Вaми свяжется наш менеджер.</p>
+            <div class="customer-info">
+                <ul>
+                    <li>{{ order.customer.name }}</li>
+                    <li>{{ order.customer.phone }}</li>
+                    <li>{{ order.customer.email }}</li>
+                </ul>
+            </div>
         </div>
     </div>
 

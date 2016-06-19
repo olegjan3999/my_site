@@ -109,6 +109,7 @@ class AutoController extends Controller
 
         return $this->render('feedback.html.twig', [
             'auto' => $auto,
+            'color' => $color->getTitle(),
         ]);
     }
 
@@ -137,7 +138,7 @@ class AutoController extends Controller
         //print_r($order);die;
 
         return $this->render('order.html.twig', [
-            //'auto' => $auto,
+            'order' => $order,
         ]);
     }
 
