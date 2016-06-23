@@ -1,0 +1,106 @@
+.slider {
+    background: url("../../images/slider_DEMO.png") no-repeat bottom center;
+    height: 809px;
+}
+@media (max-width: 768px ) {
+    .slider {
+        height: auto;
+        display: none;
+    }
+}
+
+.slider > .row {
+    height: 100%;
+}
+
+#slider-arrow, .slider-menu, #slider-form {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    background-color: rgba(222, 234, 233, 0.85);
+    height: 100%;
+    -webkit-transition: width 1s, padding 1s;
+    transition: width 0.4s, padding 0.4s;
+    position: relative;
+}
+
+/* содержимое каждого столбика (внутри картинка и название раздела) */
+.slider-button {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 18pt;
+}
+.slider-button > div {
+    margin-top: 30px;
+}
+
+/* картинка в каждом столбике */
+.slider-button > img {
+    height: 500px;
+}
+
+#slider-arrow {
+    float: left;
+    background-color: rgba(240, 142, 46, 0.8);
+    cursor: pointer;
+}
+
+#slider-block1 {
+    background-color: rgba(104, 131, 153, 0.8);
+}
+
+#slider-block2 {
+    background-color: rgba(122, 155, 180, 0.8);
+}
+
+#slider-block3 {
+    background-color: rgba(139, 176, 205, 0.8);
+}
+
+#slider-form {
+    background-color: rgba(222, 234, 233, 0.85);
+}
+
+#slider-form > form {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-hidden {
+    width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.car_brand {
+    position: absolute;
+    margin: 349px 0px 0px -311px;
+    z-index: 0;
+}
+.car_model {
+    position: absolute;
+    margin: 349px 0px 0px -143px;
+    z-index: 0;
+}
+.car_year {
+    position: absolute;
+    margin: 349px 0px 0px 35px;
+    z-index: 0;
+}
+.form-inline{
+    z-index: 1;
+}
+
+.hidden{
+    display: none;
+}
+.select-auto{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
